@@ -443,6 +443,17 @@ for (var i = 0; i < myFavFoods.length; i++){
  * Console.log your result.
 */
 
+var numArray = [12, 24, 36, 48, 60];
+
+function sumItUp(arr){
+	var total = 0;
+	for (var i = 0; i < arr.length; i++){
+		console.log(arr[i]);
+		total += arr[i];
+	} return total;
+}
+
+console.log (sumItUp(numArray));
 
 
 /*
