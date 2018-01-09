@@ -366,7 +366,7 @@ function dailySpecials(special){
 		console.log("Today's special is Seafood pizza");
 		break;
 		default:
-		console.log("Sorry, we ran out on our special");
+		console.log("Sorry, we ran out of our special");
 	}
 }
 dailySpecials("Monday");
@@ -414,7 +414,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
-
+for (var i = 1; i <= 5; i++){
+	console.log("Player " + i);
+}
 
 /* 
  * #16
@@ -422,6 +424,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i < myFavFoods.length; i++){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
