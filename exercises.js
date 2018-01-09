@@ -181,7 +181,15 @@ console.log (notEqual("Timberlake", "Timberlake"));
  * Console.log your result.
 */ 
 
-
+function spareChange(money){
+	if (money > 100){
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log (spareChange(99));
+console.log (spareChange(101));
 
 /*
  * #9
