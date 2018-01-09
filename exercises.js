@@ -159,6 +159,15 @@ console.log (isEqual("cat", "cat"));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+	if (first !== second){
+		return "Opposites do attract.";
+	} else {
+		return "Cause it's like you're my mirror.";
+	}
+}
+console.log (notEqual("ketchup", "mustard"));
+console.log (notEqual("Timberlake", "Timberlake"));
 
 /*
  * #8
