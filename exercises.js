@@ -237,7 +237,6 @@ function evenStevens(num){
 console.log("evenStevens:", evenStevens(3));
 console.log("evenStevens:", evenStevens(4));
 
-
 /*
  * #11
  * Function - daClub
@@ -251,6 +250,15 @@ console.log("evenStevens:", evenStevens(4));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+	if (cover >= 21 && age >= 21){
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log("daClub:", daClub(20, 22));
+console.log("daClub:", daClub(24, 25));
 
 /*
  * #12
