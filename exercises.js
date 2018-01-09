@@ -369,7 +369,24 @@ function dailySpecials(special){
 		console.log("Sorry, we ran out on our special");
 	}
 }
-console.log(dailySpecials("Monday"));
+dailySpecials("Monday");
+dailySpecials("Tuesday");
+dailySpecials("Wednesday");
+dailySpecials("Thursday");
+dailySpecials("Friday");
+dailySpecials("Saturday");
+dailySpecials("Sunday");
+dailySpecials("Caturday");
+
+/*
+console.log("Monday", dailySpecials("Monday"));
+console.log("Tuesday", dailySpecials("Tuesday"));
+console.log("Wednesday", dailySpecials("Wednesday"));
+console.log("Thursday", dailySpecials("Thursday"));
+console.log("Friday", dailySpecials("Friday"));
+console.log("Saturday", dailySpecials("Saturday"));
+console.log("Sunday", dailySpecials("Sunday"));
+console.log("Caturday", dailySpecials("Caturday"));*/
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
