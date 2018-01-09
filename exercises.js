@@ -36,7 +36,7 @@ function canVote(age){
 		return false;
 	}
 }
-console.log (canVote(24));
+console.log ("canVote:", canVote(24));
 
 /*
  * #2
@@ -57,7 +57,7 @@ function login(password){
 		return "Go away hacker";
 	}
 }
-console.log(login("imhacker"));
+console.log("login:", login("imhacker"));
 
 /*
  * #3
@@ -79,7 +79,7 @@ function isGreaterThan(first, second){
 		return false;
 	}
 }
-console.log(isGreaterThan(3, 800));
+console.log("isGreaterThan:", isGreaterThan(3, 800));
 
 /*
  * #4
@@ -100,7 +100,7 @@ function mustBeTrue(boo){
 		return false;
 	}
 }
-console.log (mustBeTrue(true));
+console.log ("mustBeTrue:", mustBeTrue(true));
 
 /*
  * #5
@@ -121,7 +121,7 @@ function bigBird(word){
 		return "Go home";
 	}
 }
-console.log(bigBird("Cat"));
+console.log("bigBird:", bigBird("Cat"));
 
 /*
  * #6
@@ -143,8 +143,8 @@ function isEqual(first, second){
 		return "I don't know who you are anymore.";
 	}
 }
-console.log (isEqual("dog", "Dog"));
-console.log (isEqual("cat", "cat"));
+console.log ("isEqual:", isEqual("dog", "Dog"));
+console.log ("isEqual:", isEqual("cat", "cat"));
 
 /*
  * #7
@@ -166,8 +166,8 @@ function notEqual(first, second){
 		return "Cause it's like you're my mirror.";
 	}
 }
-console.log (notEqual("ketchup", "mustard"));
-console.log (notEqual("Timberlake", "Timberlake"));
+console.log ("notEqual:", notEqual("ketchup", "mustard"));
+console.log ("notEqual:", notEqual("Timberlake", "Timberlake"));
 
 /*
  * #8
@@ -188,8 +188,8 @@ function spareChange(money){
 		return false;
 	}
 }
-console.log (spareChange(99));
-console.log (spareChange(101));
+console.log ("spareChange:", spareChange(99));
+console.log ("spareChange:", spareChange(101));
 
 /*
  * #9
