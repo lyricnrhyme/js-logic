@@ -121,7 +121,7 @@ function bigBird(word){
 		return "Go home";
 	}
 }
-console.log(bigBird("Cat"))
+console.log(bigBird("Cat"));
 
 /*
  * #6
@@ -136,6 +136,15 @@ console.log(bigBird("Cat"))
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if (first === second){
+		return "You look mahvelous!";
+	} else {
+		return "I don't know who you are anymore.";
+	}
+}
+console.log (isEqual("dog", "Dog"));
+console.log (isEqual("cat", "cat"));
 
 /*
  * #7
