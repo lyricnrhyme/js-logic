@@ -72,7 +72,14 @@ console.log(login("imhacker"));
  * Console.log your result.
 */
 
-
+function isGreaterThan(first, second){
+	if (first > second){
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log(isGreaterThan(3, 800));
 
 /*
  * #4
