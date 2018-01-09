@@ -93,7 +93,14 @@ console.log(isGreaterThan(3, 800));
  * Console.log your result.
 */
 
-
+function mustBeTrue(boo){
+	if (boo === true){
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log (mustBeTrue(true));
 
 /*
  * #5
