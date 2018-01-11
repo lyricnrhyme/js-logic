@@ -252,9 +252,9 @@ console.log("evenStevens:", evenStevens(4));
 
 function daClub(cover, age){
 	if (cover >= 21 && age >= 21){
-		return true;
+		return "Welcome to the Legends Lounge.";
 	} else {
-		return false;
+		return "Chuck E Cheese is across the street.";
 	}
 }
 console.log("daClub:", daClub(20, 22));
@@ -319,25 +319,96 @@ console.log("moneyTrain:", moneyTrain(61));
  * Console.log budget and doughnutBought again.
 */ 
 
+
+/*ver1
 var budget = 22;
 var doughnutPrice = 3;
 var doughnutBought = 0;
 
 function buyDoughnut(){
+return budget -= doughnutPrice, ++doughnutBought;
+}
+buyDoughnut();
+console.log (budget);
+console.log (doughnutBought);*/
+
+/*ver2
+var budget = 22;
+var doughnutPrice = 3;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+doughnutBought++;
+return budget -= doughnutPrice;
+}
+buyDoughnut();
+console.log (budget);
+console.log (doughnutBought);*/
+
+
+/*ver3
+var budget = 22;
+var doughnutPrice = 3;
+var doughnutBought = 0;
+
+
+function buyDoughnut(){
+doughnutBought++;
+budget -= doughnutPrice;
+var arr = [budget, doughnutBought];
+return arr;
+}
+buyDoughnut();
+console.log (budget);
+console.log (doughnutBought);*/
+
+/*ver4
+var budget = 22;
+var doughnutPrice = 3;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+	if (budget - doughnutPrice > 0){
 	return budget = budget - doughnutPrice, doughnutBought =doughnutBought + 1;
+     } else {
+     	return "You're broke";
+     }
 }
 buyDoughnut();
 console.log (budget);
 console.log (doughnutBought);
+*/
+
+/*ver5
+var budget = 22;
+var doughnutPrice = 3;
+var doughnutBought = 0;
+function buyDoughnut(){
+	if (buget >= doughnutPrice){
+		var spent = budget -= doughnutPrice;
+		var bought = ++doughnutBought;
+		console.log('14', spent, bought);
+	} else {
+		console.log("You're broke!");
+	}
+}
+*/
+
+var budget = 22;
+var doughnutPrice = 3;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+	if (budget >= doughnutPrice){
+	return budget = budget - doughnutPrice, doughnutBought =doughnutBought + 1;
+     } else {
+     	return "You're broke";
+     }
+}
 buyDoughnut();
 console.log (budget);
 console.log (doughnutBought);
-buyDoughnut();
-console.log (budget);
-console.log (doughnutBought);
-buyDoughnut();
-console.log (budget);
-console.log (doughnutBought);
+
 
 
 /*Final Boss*/
@@ -499,6 +570,16 @@ console.log(west);
 */ 
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+function subways(special){
+	for (var i = 0; i < special.length; i++){
+		if (i%2 === 1){
+			special.splice(i, 1, "Classic Tuna");
+		} else {
+			special.splice(i, 0);
+		}
+	}
+}
+console.log(subways(subOftheDay));
 
 
 /*
