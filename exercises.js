@@ -438,6 +438,7 @@ function dailySpecials(special){
 		break;
 		default:
 		console.log("Sorry, we ran out of our special");
+
 	}
 }
 dailySpecials("Monday");
@@ -569,17 +570,22 @@ console.log(west);
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+ var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+
 function subways(special){
-	for (var i = 0; i < special.length; i++){
-		if (i%2 === 1){
-			special.splice(i, 1, "Classic Tuna");
-		} else {
-			special.splice(i, 0);
-		}
-	}
+  for(var i = 0; i<special.length; i++){
+    if(i%2 === 1){
+      console.log(i);
+      special.splice(i, 1, "Classic Tuna"); 
+      special[i] = "Classic Tuna";
+    }
+
+  }
+ return special;
 }
-console.log(subways(subOftheDay));
+
+subways(subOftheDay);
+console.log(subOftheDay);
 
 
 /*
@@ -594,7 +600,20 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-var phrase = "An apple a day keeps Alice feeling awesome!";
+  var phrase = "An apple a day keeps Alice feeling awesome!";
+
+  function removeLetter(str){
+    var newArr = [];
+    for(var i = 0; i<str.length; i++){
+      console.log(str[i]);
+      if(str[i] !== 'a' && str[i] !== "A"){
+        newArr.push(str[i]);
+      }
+    }
+    console.log(newArr);
+    return newArr;
+  } 
+removeLetter(phrase);
  
   
   
